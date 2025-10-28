@@ -407,3 +407,109 @@ a:hover {
   grid-column: 5/13;
   grid-row: 1/2;
 }
+
+.enlacesLegales {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.enlacesNavegacion {
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+.logoRedes {
+  grid-column: 6/8;
+  grid-row: 1/2;
+}
+
+.newsletter {
+  grid-column: 10/13;
+  grid-row: 1/2;
+  color: var(--color-blanco);
+}
+
+.btnEnviar2 {
+  border: 1px black solid;
+  padding: var(--relleno-btn-enviar);
+  color: black;
+  border-radius: var(--radio-borde-boton-enviar);
+  background-color: var(--color-blanco);
+  margin-left: 145px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btnEnviar2:hover {
+  background-color: #f5f5f5;
+}
+
+footer {
+  padding: 40px 0;
+}
+
+/* Responsive básico */
+@media (max-width: 768px) {
+  .fila {
+    flex-direction: column;
+  }
+  
+  .columna33 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .margenIzqCajaAzul {
+    margin-left: 0;
+  }
+  
+  .contenedor,
+  .contenedorSobreKlaus,
+  .contenedorBufete,
+  .contenedorEquipo,
+  .contenedorTestimonios,
+  .contenedorContacto {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .barraSuperior,
+  .barraNavegacion,
+  .contenidoHero,
+  .textoSobreKlaus,
+  .imagenKlaus,
+  .contenidoBufete,
+  .bienvenida,
+  .equipo,
+  .tituloTestimonios,
+  .testimonio1,
+  .testimonio2,
+  .testimonio3,
+  .tituloContacto,
+  .campoNombre,
+  .campoApellidos,
+  .campoEmail,
+  .campoTelefono,
+  .campoMotivo,
+  .botonEnviar,
+  .tituloUbicacion,
+  .direccion,
+  .mapa,
+  .enlacesLegales,
+  .enlacesNavegacion,
+  .logoRedes,
+  .newsletter {
+    grid-column: 1;
+  }
+  
+  .btnEnviar {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .btnEnviar2 {
+    margin-left: 0;
+    width: 100%;
+  }
+}
