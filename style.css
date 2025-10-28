@@ -1,110 +1,69 @@
-/* Colors */
-:root {
-  /* Mode 1 */
-  /* color */
-  --auxiliary-acentos-1: #c55a26;
-  --auxiliary-acentos-2: #e3be86;
-  --auxiliary-hover: #faa82a;
-  --basics-black: #000000;
-  --basics-white: #f1f0ea;
-  --primary-fondo: var(--basics-white);
-  --primary-secciones-1: #112c50;
-  --secondary-secciones-2: #b9cade;
-  --secondary-secciones-3: #d7c2b6;
-  --text-on-dark: var(--basics-white);
-  --text-primary: var(--basics-black);
-}
-/* Typography */
-:root {
-  /* Mode 1 */
-  /* number */
-  --size-button-text: 0.875rem;
-  --size-parrafo: 1rem;
-  --size-h4: 1.125rem;
-  --size-texto-destacado: 1.25rem;
-  --size-h3: 2rem;
-  --size-h2: 2.25rem;
-  --size-h1: 3.4375rem;
-  /* string */
-  --weight-parrafo: Regular;
-}
-/* Borders-SIzes */
-:root {
-  /* Mode 1 */
-  /* number */
-  --radius-button-radius: 0.625rem;
+@font-face {
+  font-family: "Neue Monreal";
+  src: url(../assets/fonts/NeueMontreal-Medium.woff);
 }
 
-.hero{
-    background-image: url(assets/img/header-background.jpg);
+:root {
+  /* Colores */
+  --color-fondo-encabezado: #292848;
+  --color-fondo-rectangulo-azul: #2b647f;
+  --color-blanco: white;
+  --color-fondo-amarillo: #e3be86;
+  --color-fondo-naranja: #cb5122;
+  --color-fondo-azul-claro: #b9cade;
+  --color-texto: #333;
+  
+  /* Dimensiones */
+  --ancho-contenedor: 90%;
+  --ancho-completo: 100%;
+  --ancho-rectangulo-azul: 60px;
+  --alto-imagen-abogados: 100vh;
+  --alto-rectangulo-azul: 8px;
+  
+  /* Espaciado */
+  --relleno-base: 1.5% 4%;
+  --relleno-despacho: 5% 4%;
+  --relleno-inputs: 3% 4%;
+  --relleno-botones: 10px 20px;
+  --relleno-abogado-aleman: 100px 30px;
+  --relleno-caja-azul: 10px 40px;
+  --relleno-opinion: 20px;
+  --relleno-input: 15px;
+  --relleno-motivo-consulta: 100px;
+  --relleno-enviar: 40px;
+  --relleno-btn-enviar: 10px 40px;
+  
+  /* Márgenes */
+  --margen-peq: 10px;
+  --margen-izq-enviar: 230px;
+  --margen-grande: 40px;
+  --margen-sup-boton: 50px;
+  --margen-izq-caja-azul: 40px;
+  --margen-inf-rectangulo-azul: 50px;
+  
+  /* Texto */
+  --decoracion-texto: none;
+  --tamano-fuente-grande: 45px;
+  --negrita: bold;
+  
+  /* Estilos visuales */
+  --radio-borde: 5px;
+  --radio-borde-klaus: 10px;
+  --radio-borde-boton-enviar: 30px;
+  
+  /* Fuentes */
+  --fuente-neue: "Neue Montreal", sans-serif;
+  --fuente-serif: "Neue Montreal", serif;
 }
 
+/* Reset y estilos base */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  padding: 0;
-}
-.wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-}
-
-.wrapper > div {
-  border: 2px solid rgb(233 171 88);
-  border-radius: 5px;
-  background-color: rgb(233 171 88 / 50%);
-  padding: 1em;
-  color: #d9480f;
-}
-
-.wrapper {
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-.one {
-  grid-column: 2 / 6;
-  grid-row: 1;
-}
-.two {
-  grid-column: 7 / 12;
-}
-
-.banner-text {
-  position: relative;
-  font-family: Arial, sans-serif;
-  font-size: 1.2em;
-  color: #000;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.banner-text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px; /* Ajusta el ancho según necesites */
-  height: 5px; /* Ajusta la altura según necesites */
-  background-color: #003366; /* Cambia el color según el tono de azul que desees */
-  margin-bottom: 8px;
-}
-
-.top-bar {
-  background-color: var(--primary-secciones-1); /* Cambia el color según el tono de azul que desees */
-  color: var(--basics-white);
-  padding: 10px 0;
-  text-align: center;
-}
-
-.top-bar a {
-  color: var(--basics-white);
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+  font-family: var(--fuente-neue);
+  color: var(--color-texto);
+  line-height: 1.6;
 }
