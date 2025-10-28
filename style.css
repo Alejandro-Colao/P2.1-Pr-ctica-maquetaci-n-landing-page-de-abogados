@@ -67,3 +67,33 @@ body {
   color: var(--color-texto);
   line-height: 1.6;
 }
+
+.encabezado {
+  background-color: var(--color-fondo-encabezado);
+  color: var(--color-blanco);
+}
+
+.fila {
+  display: flex;
+}
+
+.espacioEntre {
+  justify-content: space-between;
+}
+
+.centrarVerticalmente {
+  align-items: center;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: var(--relleno-base);
+  gap: 40px;
+}
+
+.barraSuperior {
+  grid-column: 1/13;
+  grid-row: 1/2;
+}
