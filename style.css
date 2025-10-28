@@ -272,3 +272,51 @@ a:hover {
 .margenIzqCajaAzul {
   margin-left: var(--margen-izq-caja-azul);
 }
+
+
+.contenedorTestimonios {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: var(--relleno-inputs);
+}
+
+.tituloTestimonios {
+  grid-column: 1/13;
+  grid-row: 1/2;
+}
+
+.testimonio1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.testimonio2 {
+  grid-column: 5/9;
+  grid-row: 1/2;
+}
+
+.testimonio3 {
+  grid-column: 10/13;
+  grid-row: 1/2;
+}
+
+.fondoAzulOscuro {
+  background-color: var(--color-fondo-encabezado);
+}
+
+.fondoBlanco {
+  background-color: var(--color-blanco);
+}
+
+.textoBlanco {
+  color: var(--color-blanco);
+}
+
+.rellenoOpinion {
+  padding: var(--relleno-opinion);
+}
+
+.altura90 {
+  height: 90%;
+}
