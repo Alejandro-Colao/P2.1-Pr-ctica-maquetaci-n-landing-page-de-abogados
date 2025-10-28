@@ -183,3 +183,36 @@ a {
 a:hover {
   opacity: 0.8;
 }
+
+.contenedorSobreKlaus {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: var(--relleno-abogado-aleman);
+  background-color: var(--color-blanco);
+}
+
+.textoSobreKlaus {
+  grid-column: 2/6;
+  grid-row: 1/2;
+}
+
+.imagenKlaus {
+  grid-column: 7/12;
+  grid-row: 1/2;
+}
+
+.rectanguloAzul {
+  height: var(--alto-rectangulo-azul);
+  width: var(--ancho-rectangulo-azul);
+  background-color: var(--color-fondo-rectangulo-azul);
+  margin-bottom: var(--margen-inf-rectangulo-azul);
+}
+
+.margenSupGrande {
+  margin-top: var(--margen-sup-boton);
+}
+
+.bordeRedondeadoImagen {
+  border-radius: var(--radio-borde-klaus);
+}
