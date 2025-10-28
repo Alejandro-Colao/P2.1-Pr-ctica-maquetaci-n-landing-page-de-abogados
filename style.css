@@ -216,3 +216,31 @@ a:hover {
 .bordeRedondeadoImagen {
   border-radius: var(--radio-borde-klaus);
 }
+
+.contenedorBufete {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: var(--relleno-abogado-aleman);
+  color: var(--color-blanco);
+}
+
+.contenidoBufete {
+  grid-column: 4/10;
+  grid-row: 1/2;
+}
+
+.bufeteTrilingue {
+  background-image: url(../assets/img/techo-cristal.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.textoCentrado {
+  text-align: center;
+}
+
+.margenSupPeq {
+  margin-top: 25px;
+}
