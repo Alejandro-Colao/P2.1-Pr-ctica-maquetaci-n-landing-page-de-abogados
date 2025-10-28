@@ -12,14 +12,15 @@
   --color-fondo-naranja: #cb5122;
   --color-fondo-azul-claro: #b9cade;
   --color-texto: #333;
-  
+  --negro: #000;
+
   /* Dimensiones */
   --ancho-contenedor: 90%;
   --ancho-completo: 100%;
   --ancho-rectangulo-azul: 60px;
   --alto-imagen-abogados: 100vh;
   --alto-rectangulo-azul: 8px;
-  
+
   /* Espaciado */
   --relleno-base: 1.5% 4%;
   --relleno-despacho: 5% 4%;
@@ -32,7 +33,7 @@
   --relleno-motivo-consulta: 100px;
   --relleno-enviar: 40px;
   --relleno-btn-enviar: 10px 40px;
-  
+
   /* Márgenes */
   --margen-peq: 10px;
   --margen-izq-enviar: 230px;
@@ -40,17 +41,17 @@
   --margen-sup-boton: 50px;
   --margen-izq-caja-azul: 40px;
   --margen-inf-rectangulo-azul: 50px;
-  
+
   /* Texto */
   --decoracion-texto: none;
   --tamano-fuente-grande: 45px;
   --negrita: bold;
-  
+
   /* Estilos visuales */
   --radio-borde: 5px;
   --radio-borde-klaus: 10px;
   --radio-borde-boton-enviar: 30px;
-  
+
   /* Fuentes */
   --fuente-neue: "Neue Montreal", sans-serif;
   --fuente-serif: "Neue Montreal", serif;
@@ -378,9 +379,9 @@ a:hover {
 }
 
 .btnEnviar {
-  border: 1px black solid;
+  border: 1px var(--negro) solid;
   padding: var(--relleno-btn-enviar);
-  color: black;
+  color: var(--negro);
   border-radius: var(--radio-borde-boton-enviar);
   background-color: var(--color-blanco);
   margin-left: var(--margen-izq-enviar);
@@ -430,9 +431,9 @@ a:hover {
 }
 
 .btnEnviar2 {
-  border: 1px black solid;
+  border: 1px var(--negro) solid;
   padding: var(--relleno-btn-enviar);
-  color: black;
+  color: var(--negro);
   border-radius: var(--radio-borde-boton-enviar);
   background-color: var(--color-blanco);
   margin-left: 145px;
@@ -454,16 +455,16 @@ footer {
   .fila {
     flex-direction: column;
   }
-  
+
   .columna33 {
     width: 100%;
     margin-bottom: 20px;
   }
-  
+
   .margenIzqCajaAzul {
     margin-left: 0;
   }
-  
+
   .contenedor,
   .contenedorSobreKlaus,
   .contenedorBufete,
@@ -473,7 +474,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .barraSuperior,
   .barraNavegacion,
   .contenidoHero,
@@ -502,12 +503,12 @@ footer {
   .newsletter {
     grid-column: 1;
   }
-  
+
   .btnEnviar {
     margin-left: 0;
     width: 100%;
   }
-  
+
   .btnEnviar2 {
     margin-left: 0;
     width: 100%;
