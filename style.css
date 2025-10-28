@@ -1,0 +1,110 @@
+/* Colors */
+:root {
+  /* Mode 1 */
+  /* color */
+  --auxiliary-acentos-1: #c55a26;
+  --auxiliary-acentos-2: #e3be86;
+  --auxiliary-hover: #faa82a;
+  --basics-black: #000000;
+  --basics-white: #f1f0ea;
+  --primary-fondo: var(--basics-white);
+  --primary-secciones-1: #112c50;
+  --secondary-secciones-2: #b9cade;
+  --secondary-secciones-3: #d7c2b6;
+  --text-on-dark: var(--basics-white);
+  --text-primary: var(--basics-black);
+}
+/* Typography */
+:root {
+  /* Mode 1 */
+  /* number */
+  --size-button-text: 0.875rem;
+  --size-parrafo: 1rem;
+  --size-h4: 1.125rem;
+  --size-texto-destacado: 1.25rem;
+  --size-h3: 2rem;
+  --size-h2: 2.25rem;
+  --size-h1: 3.4375rem;
+  /* string */
+  --weight-parrafo: Regular;
+}
+/* Borders-SIzes */
+:root {
+  /* Mode 1 */
+  /* number */
+  --radius-button-radius: 0.625rem;
+}
+
+.hero{
+    background-image: url(assets/img/header-background.jpg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.wrapper > div {
+  border: 2px solid rgb(233 171 88);
+  border-radius: 5px;
+  background-color: rgb(233 171 88 / 50%);
+  padding: 1em;
+  color: #d9480f;
+}
+
+.wrapper {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 2 / 6;
+  grid-row: 1;
+}
+.two {
+  grid-column: 7 / 12;
+}
+
+.banner-text {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  color: #000;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.banner-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px; /* Ajusta el ancho según necesites */
+  height: 5px; /* Ajusta la altura según necesites */
+  background-color: #003366; /* Cambia el color según el tono de azul que desees */
+  margin-bottom: 8px;
+}
+
+.top-bar {
+  background-color: var(--primary-secciones-1); /* Cambia el color según el tono de azul que desees */
+  color: var(--basics-white);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.top-bar a {
+  color: var(--basics-white);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
