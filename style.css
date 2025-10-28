@@ -244,3 +244,31 @@ a:hover {
 .margenSupPeq {
   margin-top: 25px;
 }
+
+.contenedorEquipo {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: var(--relleno-inputs);
+}
+
+.bienvenida {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.equipo {
+  grid-column: 4/13;
+  grid-row: 1/2;
+  background-color: var(--color-fondo-azul-claro);
+  padding: var(--relleno-caja-azul);
+  border-radius: var(--radio-borde);
+}
+
+.columna33 {
+  width: 33.3%;
+}
+
+.margenIzqCajaAzul {
+  margin-left: var(--margen-izq-caja-azul);
+}
