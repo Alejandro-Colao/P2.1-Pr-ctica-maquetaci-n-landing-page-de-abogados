@@ -97,3 +97,89 @@ body {
   grid-column: 1/13;
   grid-row: 1/2;
 }
+
+.barraNavegacion {
+  grid-column: 1/13;
+  grid-row: 1/2;
+}
+
+.seccionHero {
+  background-image: url(../assets/img/header-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: var(--alto-imagen-abogados);
+}
+
+.contenidoHero {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  color: var(--color-blanco);
+  font-style: italic;
+}
+
+.anchoCompleto {
+  width: var(--ancho-completo);
+}
+
+.margenIzqPeq {
+  margin-left: var(--margen-peq);
+}
+
+.margenIzqGrande {
+  margin-left: var(--margen-grande);
+}
+
+.textoGrande {
+  font-size: var(--tamano-fuente-grande);
+  font-style: normal;
+}
+
+.textoNormal {
+  font-style: normal;
+}
+
+.fuenteSerif {
+  font-family: var(--fuente-serif);
+}
+
+.negrita {
+  font-weight: var(--negrita);
+}
+
+.btnAmarillo {
+  padding: var(--relleno-botones);
+  background-color: var(--color-fondo-amarillo);
+  border: 0;
+  border-radius: var(--radio-borde);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btnAmarillo:hover {
+  background-color: #d4af70;
+}
+
+.btnNaranja {
+  padding: var(--relleno-botones);
+  background-color: var(--color-fondo-naranja);
+  border: 0;
+  border-radius: var(--radio-borde);
+  color: var(--color-blanco);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btnNaranja:hover {
+  background-color: #b4471e;
+}
+
+a {
+  text-decoration: var(--decoracion-texto);
+  color: var(--color-blanco);
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
