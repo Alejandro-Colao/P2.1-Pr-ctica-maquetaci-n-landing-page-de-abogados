@@ -391,3 +391,19 @@ a:hover {
 .btnEnviar:hover {
   background-color: #f5f5f5;
 }
+
+
+.tituloUbicacion {
+  grid-column: 1/13;
+  grid-row: 1/2;
+}
+
+.direccion {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+
+.mapa {
+  grid-column: 5/13;
+  grid-row: 1/2;
+}
