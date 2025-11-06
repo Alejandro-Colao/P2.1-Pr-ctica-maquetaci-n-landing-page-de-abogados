@@ -105,7 +105,7 @@ body {
 }
 
 .seccionHero {
-  background-image: url(../assets/img/header-background.jpg);
+  background-image: url(./assets/img/header-background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -512,5 +512,23 @@ footer {
   .btnEnviar2 {
     margin-left: 0;
     width: 100%;
+  }
+
+  .menuToggle {
+    display: block; /* mostrar el botón */
+  }
+
+  .navLinks {
+    display: none; /* ocultar los enlaces */
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background: #333;
+    padding: 10px;
+  }
+
+  .navLinks.active {
+    display: flex; /* mostrar cuando está activo */
   }
 }
